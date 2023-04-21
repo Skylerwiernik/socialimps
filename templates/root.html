@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Back to the Future</title>
     <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
 </head>
 <body>
@@ -72,6 +72,60 @@
               </p>
             </div>
       </div>
+
+      <h2>Meeting minutes</h2>
+
+      <div class="button-row">
+		<button class="button" onclick="showPopup(1)">4/11</button>
+		<button class="button" onclick="showPopup(2)">4/19</button>
+		<button class="button" onclick="showPopup(3)">4/21</button>
+		<button class="button" onclick="showPopup(4)">Button 4</button>
+		<button class="button" onclick="showPopup(5)">Button 5</button>
+	</div>
+
+      	<div class="popup" id="popup1">
+		    <h2>4/11</h2>
+		    <ul>
+                <li>Assigned chapters 3-6</li>
+            <ul>
+                <li>Emma took 3 and 5</li>
+                <li>Kyle took 4 and 5</li>
+                <li>Kayla took 6</li>
+            </ul>
+                <li>We divided the other work as well</li>
+                <ul>
+                    <li>Skyler started the website</li>
+                    <li>Ansel was sick and unable to make the meeting</li>
+                </ul>
+                <li>We decided to assign future chapters in a later meeting where everyone could attend</li>
+            </ul>
+		<button class="button" onclick="hidePopup(1)">Close</button>
+	</div>
+
+	<div class="popup" id="popup2">
+		<h2>Popup 2</h2>
+		<p>This is the content of Popup 2</p>
+		<button class="button" onclick="hidePopup(2)">Close</button>
+	</div>
+
+	<div class="popup" id="popup3">
+		<h2>Popup 3</h2>
+		<p>This is the content of Popup 3</p>
+		<button class="button" onclick="hidePopup(3)">Close</button>
+	</div>
+
+	<div class="popup" id="popup4">
+		<h2>Popup 4</h2>
+		<p>This is the content of Popup 4</p>
+		<button class="button" onclick="hidePopup(4)">Close</button>
+	</div>
+
+	<div class="popup" id="popup5">
+		<h2>Popup 5</h2>
+		<p>This is the content of Popup 5</p>
+		<button class="button" onclick="hidePopup(5)">Close</button>
+	</div>
+
       <div class="timeline">
           <h2>Timeline</h2>
           <p>Timeline A: Original timeline unaltered by Marty’s time travel experience in 1955. <br>Timeline B: New timeline altered by Marty’s time travel experience in 1955.</p>

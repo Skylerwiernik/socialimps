@@ -10,3 +10,11 @@
       }
     });
   }
+
+  function showPopup(popupNumber) {
+    document.getElementById("popup" + popupNumber).style.display = "block";
+  }
+
+  function hidePopup(popupNumber) {
+    document.getElementById("popup" + popupNumber).style.display = "none";
+  }
